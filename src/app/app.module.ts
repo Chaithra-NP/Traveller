@@ -25,6 +25,10 @@ import { RegisterformComponent } from './registerform/registerform.component';
 import { MatNativeDateModule} from '@angular/material/core';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { CustomerComponent } from './customer/customer.component';
+import { MatListModule} from '@angular/material/list';
+import { BidiModule } from '@angular/cdk/bidi';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 
 
@@ -35,7 +39,8 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     LoginComponent,
     RegisterComponent,
-    RegisterformComponent
+    RegisterformComponent,
+    CustomerComponent
   ],
   imports: [
     BrowserModule,
@@ -56,7 +61,10 @@ import { FormsModule } from '@angular/forms';
     MatDatepickerModule,
     MatNativeDateModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    MatListModule,
+    MatSidenavModule,
+    BidiModule
   ],
   providers: [],
   bootstrap: [AppComponent]
